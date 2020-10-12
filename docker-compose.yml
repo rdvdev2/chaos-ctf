@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+    chaos-ctf:
+        image: "chaos-ctf"
+        build: .
+        ports:
+            - "22:22"
+        volumes:
+            - chaos-ctf-tmp:/tmp
+
+volumes:
+    chaos-ctf-tmp:
